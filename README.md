@@ -1,32 +1,26 @@
 # PinMe.js
 
-I had to add Pinterest "Pin It" buttons to a clients site, and didn't like the stock Pinterest option or other options I found, so I made this.
-
-I have NOT done extensive testing with this and can't ensure it'll work perfectly in every situation, but for the most part it works as I intend it to.
-
-You are welcome to use it as-is, fork it and make it better, steal it and say you wrote it, whatever. If you want to help make it better, I welcome input/pull requests! 
+I had to add Pinterest "Pin It" buttons to a client site, and didn't like the standard Pinterest option or other options I found, so I made this.
 
 ## How to Use
-Include jQuery and PinMe.js on your site and use 'pinMe()' to target sections where you want to add the Pin button.
+Include jQuery and PinMe.js on your site and use 'pinMe()' to target sections where you want to add the Pin button. PinMe will find all images within your target and add a generic pin-it button to each. There arent any visual styles added by default, so you'll need to style the button with some CSS. 
 
 ```html
 <script src="path/to/jquery.min.js"></script>
 <script src="path/to/pinme.js"></script>
 <script>
   $(document).ready(function(){
-    // Target the area containing images you want to add the pin button to (body, .page-wrap, .post, #very-specific-element, etc)
+    // Where you want PinMe.js to look for your images (body, .page-wrap, .post, #very-specific-element, etc)
     $(".post-container").pinMe();
   });
 </script>
 ```
 
-This will find all images within your selector and add a PinMe button to each, which can be styled with CSS.
-
 ## Options
 You can customize some things. Check it out:
 
 ### Custom Button HTML
-By default, PinMe wraps the image and adds `<div class="pin-me-button">Pin Me</div>` to the image. You can change this to be whatever you want, including a picture, svg, icon-font, or whatever you want.
+By default, PinMe wraps the image and adds `<div class="pin-me-button">Pin Me</div>` to the image. You can change this to be whatever you want, including a picture, svg, icon-font, or whatever you want. You can style this with CSS to customize the look.
 
 ```javascript
 
@@ -80,3 +74,10 @@ Here are some more options.
 - `showOnHover` - True/False. If false, pin button will be shown at all times. Default is true.
 - `fadeDuration` - Set the duration of the fadein/fadeout effect. Default is 700.
 - `popOut` - True/False. Pinterest sharing window pops out when true, opens in current window if false. Default is true.
+
+
+## Notes
+
+I have NOT done extensive testing with this plugin and can't ensure it will work perfectly in every possible situation.
+
+You are welcome to use this plugin as-is, fork it and make it better, steal it and say you wrote it, whatever you want. If you want to help me make it better, just submit a pull request! 

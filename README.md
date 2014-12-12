@@ -25,7 +25,7 @@ By default, PinMe wraps the image and adds `<div class="pin-me-button">Pin Me</d
 ```javascript
 
   $(".post-content").pinMe({ 
-    pinButton: '<span class="my-cool-icon"></span>''
+    pinButton: '<span class="my-cool-icon"></span>'
   });
   
 ```

@@ -2,7 +2,7 @@
  * @author Eric Hermanson
  */
 
-(function($) {
+;(function($) {
 
   'use strict';
 

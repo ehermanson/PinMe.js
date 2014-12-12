@@ -117,6 +117,6 @@
     if (window.focus) {
       newWindow.focus();
     }
-  };f
+  };
 
 })(jQuery);
